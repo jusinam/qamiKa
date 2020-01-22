@@ -1,8 +1,6 @@
 {% extends 'base.html'%}
 {% import 'bootstrap/wtf.html' as wtf %}
 {% block content %}
-    <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
-
 <div class="container colormg">
     <div class="row" style="box-shadow: inset 1px 0px 0px px black;text-shadow: -1px 1px 0px black;">
         
@@ -22,7 +20,7 @@
                 <div class="card testimonial-card" style="background-color: rgba(99, 90, 69, 0.224);box-shadow: inset 6px -20px 20px 2px black;">
                     <div class="card-up"></div>
                     <div class="avatar mx-aut" style="color: rgb(167, 164, 158);">
-                            <img src="{{profile_pic_path}}" class="rounded-circle account-img mt-2" alt="Picture" style="width: 250px;height:250px;">
+                            <img src="{{profile_pic_path}}" class="rounded-circle account-img mt-2" alt="&nbsp;Picture" style="width: 250px;height:250px;margin-left: 3%;margin-top: 2%;">
                     </div>
                     <div class="card-body">
                         <h5 class="card-title text-right" style="color: rgb(167, 164, 158);" ><strong>{{ current_user.username | title }}</strong></h5>
@@ -32,7 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-4">
+            <div class="container mt-4" style="background-color: rgba(72, 75, 78, 0.707);border-radius: 0.1rem;" >
                 <div id="profileupdate" style="color: white;">
                     {{wtf.quick_form(form)}}
                 </div>
