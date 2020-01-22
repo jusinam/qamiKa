@@ -15,4 +15,4 @@ def recommed(id):
         return redirect('index.html',commic=commic)
         title=f'make a new recommedation to |commic.id '
 
-    return ('recommed.html',title=title,form=form)
+    return ('posts.html',title=title,form=form)
