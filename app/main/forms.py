@@ -24,3 +24,9 @@ class CreateBlog(FlaskForm):
     title = StringField('Blog Title',validators=[Required()])
     content = TextAreaField('Blog Content',validators=[Required()])
     submit = SubmitField('Post')
+    
+class RecommendationForm(FlaskForm):
+
+    heading= StringField('title',validators=[Required()])
+    content = TextAreaField('content body', validators=[Required()])
+    submit = SubmitField('Submit')
