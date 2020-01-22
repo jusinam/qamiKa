@@ -4,11 +4,11 @@
 
 
 
-class Comic(db.Model):
+class Commic(db.Model):
     __tablename__='comic'
     id=db.Column(db.Integer,primary_key=True)
 
-    recommedations=db.relationship('Recommedation',backref='comics',lazy=dynamic)
+    recommedations=db.relationship('Recommedation',backref='commics',lazy=dynamic)
 
 
 
@@ -17,4 +17,4 @@ class Recommedation(db.Model):
     id=db.Column(db.Integer,primary_key=True)
     heading=db.Column(db.String(255),index=True)
     content=db.Column(db.Text)
-    comic_id=db.Column(db.Integer,db.ForeignKey('comic.id'))
+    comic_id=db.Column(db.Integer,db.ForeignKey('commic.id'))
