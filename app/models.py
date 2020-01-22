@@ -114,16 +114,16 @@ class Subscriber(db.Model):
 
 
 
-class Recommedation(db.Model):
-    __tablename__='recommedations'
-    id=db.Column(db.Integer,primary_key=True)
-    heading=db.Column(db.String(255),index=True)
-    content=db.Column(db.Text)
-    comic_id=db.Column(db.Integer,db.ForeignKey('commic.id'))
+# class Recommedation(db.Model):
+#     __tablename__='recommedations'
+#     id=db.Column(db.Integer,primary_key=True)
+#     heading=db.Column(db.String(255),index=True)
+#     content=db.Column(db.Text)
+#     blog_id=db.Column(db.Integer,db.ForeignKey('blogs.id'))
 
-    def recommedation_save(self):
-        db.session.add(self)
-        db.session.commit()
+#     def recommedation_save(self):
+#         db.session.add(self)
+#         db.session.commit()
 
 
 @login_manager.user_loader
