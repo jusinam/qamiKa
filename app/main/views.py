@@ -1,11 +1,11 @@
 from flask import render_template,url_for,request,flash,redirect,abort
 from app.main  import main
-from app.models import User
+from app.models import User,Recommedation
 from .. import db, photos
 from flask_login import login_required,current_user
 import secrets
 import os
-from .forms import UpdateProfile,CreateBlog
+from .forms import UpdateProfile,CreateBlog,RecommedationForm
 
 # from ..email import mail_message
 
@@ -32,3 +32,18 @@ def profile():
         form.bio.data = current_user.bio
     profile_pic_path = url_for('static',filename='photos' + current_user.profile_pic_path)    
     return render_template('profile/profile.html',form=form)
+  
+@main.route('/commic/recommed/<int:id>')
+@loginrequired
+def recommed(id):
+    commic=Commic.query.get(id)
+    form=RecommedationForm()
+
+    if form.validate_on_submit():
+        new_recommedtaion=Recommedation(heading=form.heading.data,content=form.content.data)
+        new_recommedataion.recommedation_saves()
+
+        return redirect('index.html',commic=commic)
+        title=f'make a new recommedation to |commic.id '
+
+    return ('recommed.html',title=title,form=form)
