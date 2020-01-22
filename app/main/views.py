@@ -9,6 +9,10 @@ def recommed(id):
     form=RecommedationForm()
 
     if form.validate_on_submit():
-        new_recommedtaion=(heading=form.heading.data,content=form.content.data)
+        new_recommedtaion=Recommedation(heading=form.heading.data,content=form.content.data)
+        new_recommedataion.recommedation_saves()
 
-        new_recommedtaion.save()
+        return redirect('index.html')
+        title=f'make a new recommedation to |commic.id '
+
+    return ('recommed.html',title=title,form=form)
