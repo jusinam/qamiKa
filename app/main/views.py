@@ -12,7 +12,7 @@ def recommed(id):
         new_recommedtaion=Recommedation(heading=form.heading.data,content=form.content.data)
         new_recommedataion.recommedation_saves()
 
-        return redirect('index.html')
+        return redirect('index.html',commic=commic)
         title=f'make a new recommedation to |commic.id '
 
     return ('recommed.html',title=title,form=form)
