@@ -8,6 +8,8 @@ class Comic(db.Model):
     __tablename__='comic'
     id=db.Column(db.Integer,primary_key=True)
 
+    recommedations=db.relationship('Recommedation',backref='comics',lazy=dynamic)
+
 
 
 class Recommedation(db.Model):
