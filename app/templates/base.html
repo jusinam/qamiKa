@@ -15,9 +15,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+    <style>
+        .transparent {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid #fff;
+        }
+    
+    </style>
     {% endblock %}
 </head>
-<body style="background-image: url(http://getwallpapers.com/wallpaper/full/2/1/c/505096.jpg);background-size: cover;background-repeat: no-repeat;">
+<body style="background-image: url(http://getwallpapers.com/wallpaper/full/f/9/6/504830.jpg);background-size: cover;background-repeat: no-repeat;">
     {% block navbar %}
     {% include "navbar.html" %}
     {% endblock %}
@@ -27,12 +35,11 @@
     {% endblock%}
 
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.js') }}"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
 </body>
 </html>
