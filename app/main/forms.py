@@ -8,5 +8,4 @@ class RecommedationForm(FlaskForm):
 
     heading= StringField('title',validators=[Required()])
     content = TextAreaField('content body', validators=[Required()])
-    time= start = DateField('Date', format='%m/%d/%Y')
     submit = SubmitField('Submit')
