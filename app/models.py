@@ -106,11 +106,11 @@ class Subscriber(db.Model):
         return f'Subscriber {self.email}'
       
 
-class Commic(db.Model):
-    __tablename__='comic'
-    id=db.Column(db.Integer,primary_key=True)
+# class Commic(db.Model):
+#     __tablename__='comic'
+#     id=db.Column(db.Integer,primary_key=True)
 
-    recommedations=db.relationship('Recommedation',backref='commics',lazy=dynamic)
+#     recommedations=db.relationship('Recommedation',backref='commics',lazy=dynamic)
 
 
 
