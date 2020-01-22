@@ -18,3 +18,7 @@ class Recommedation(db.Model):
     heading=db.Column(db.String(255),index=True)
     content=db.Column(db.Text)
     comic_id=db.Column(db.Integer,db.ForeignKey('commic.id'))
+
+    def recommedation_save(self):
+        db.session.add(self)
+        db.session.commit()
