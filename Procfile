@@ -1,1 +1,1 @@
-weblog: chapaaa
+web: gunicorn manage:app
