@@ -1,26 +1,34 @@
 import os
+
 class Config:
-    """Main configurations class"""
-    SQLALCHEMY_TRACK_MODIFICATIONS = False
-    #SQLALCHEMY_DATABASE_URI = os.environ.get("SQLALCHEMY_DATABASE_URI")
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:opanaopana@localhost/'
-    SECRET_KEY = "ghihdslkj;sa;lksd;lk;salkj" #os.environ.get("SECRET_KEY")
-    UPLOADED_PHOTOS_DEST = 'app/static/photos'
+    '''
+    Parent configuration class
+    '''
+    debug = True
+    SECRET_KEY = os.environ.get('SECRET_KEY')
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:hahaa@localhost/qam'
+    #  email configurations
     MAIL_SERVER = 'smtp.gmail.com'
-    MAIL_PORT = 587
-    MAIL_USE_TLS = True
+    MAIL_PORT = 465
+    MAIL_USE_TLS = False
+    MAIL_USE_SSL = True
     MAIL_USERNAME = os.environ.get("MAIL_USERNAME")
     MAIL_PASSWORD = os.environ.get("MAIL_PASSWORD")
-    UPLOADED_PHOTOS_DEST ='app/static/photos'
 class ProdConfig(Config):
-    """Production configuration class that inherits from the main configurations class"""
-    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")# os.environ.get("DATABASE_URL")
-    #SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+    '''
+    Production configuration child class
+    '''
+    SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+
 class DevConfig(Config):
-    """Configuration class for development stage of the app"""
+    '''
+    Development configuration child class
+    '''
+    SECRET_KEY = 'hahaha'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://moringa:hahaa@localhost/qam'
     DEBUG = True
+    ENV = 'development'
 config_options = {
-    'development': DevConfig,
-    'production': ProdConfig
-    #'test':TestConfig
+    'development':DevConfig,
+    'production':ProdConfig,
 }
