@@ -16,3 +16,11 @@ class ProdConfig(Config):
     """Production configuration class that inherits from the main configurations class"""
     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")# os.environ.get("DATABASE_URL")
     #SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
+class DevConfig(Config):
+    """Configuration class for development stage of the app"""
+    DEBUG = True
+config_options = {
+    'development': DevConfig,
+    'production': ProdConfig
+    #'test':TestConfig
+}
