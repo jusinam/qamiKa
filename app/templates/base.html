@@ -41,5 +41,18 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/js/mdb.min.js"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.4.1.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#showform").click(function(){
+                $("#profileupdate").slideDown('2500');  
+            });
+            $("#submit").click(function(){
+                $("#profileupdate").slideUp('1500'); 
+            });
+
+        });
+
+    </script>
 </body>
 </html>
