@@ -48,4 +48,11 @@ Authors
 #Bug and Solution.
    . No known bugs
 
-   
+#Technologies Used
+  . Python version 3.8.0 .
+  . Flask (Flas modules).
+  . PSQL database.
+  . SQLAlembic. *Jinja2  
+
+#Live Site link
+  https://qamiKa.herokuapp.com/   
