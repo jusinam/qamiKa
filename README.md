@@ -7,13 +7,9 @@ Authors
   . Evans Nyambane
   .  Peter Mbai
   .  John Opana
-  .  Jepheth
+  .  Jepheth mwania
 
 
-
-## Specifications
-  | Behaviour | Input | Output |
-  | --------------- | :----------:| --------: |
-  |Display blogposts |enter the site URL
-  |Create a post | **Click** create a post | A page with a form to create a post will pop up |
-  |Add a comment | **Click** Add Comment |A page with a form to create a comment will pop up  |
+#BDD
+  Display comics.
+  display comics recommedations.
