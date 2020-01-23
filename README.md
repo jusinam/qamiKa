@@ -19,3 +19,10 @@ Authors
   Enter your email address, username and passsword
   Submit the form.
   Write down recommedations.
+
+#Output
+  . Sign Up,Sign In
+  . View added pomos.
+  . Username.
+  . Delete a pomo.
+  . SignOut.
