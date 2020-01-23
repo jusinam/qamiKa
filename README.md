@@ -52,7 +52,16 @@ Authors
   . Python version 3.8.0 .
   . Flask (Flas modules).
   . PSQL database.
-  . SQLAlembic. *Jinja2  
+  . SQLAlembic.
 
 #Live Site link
-  https://qamiKa.herokuapp.com/   
+  https://qamiKa.herokuapp.com/
+
+  Collaborate
+  Incase of any questions, problems ideas concerning the app, feel free to reach out to us:
+
+  Github: Evans Nyambane Email: evansonchagwa01@gmail.com
+
+  Github: Peter Mbai Email: petermbaik@gmail.com
+
+  Github: John Opana Email: johnopana@gmail.com    
