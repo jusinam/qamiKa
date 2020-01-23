@@ -1,48 +1,48 @@
-#PITCH
+## PITCH
 
-qamiKa is a flask application that allows users to view comics and also recommend various jokes.
-
-
-Authors
-  . Evans Nyambane
-  .  Peter Mbai
-  .  John Opana
-  .  Jepheth mwania
+- QamiKa is a flask application that allows users to view comics and also recommend various jokes.
 
 
-#BDD
-  . Display comics.
-  . display comics recommedations.
+## Authors
+  -  Evans Nyambane
+  -   Peter Mbai
+  -   John Opana
+  -   Jepheth mwania
 
 
-#Input
-  . Enter your email address, username and passsword
-  . Submit the form.
-  . Write down recommedations.
-
-#Output
-  . Sign Up,Sign In
-  . View added pomos.
-  . Username.
-  . Delete a pomo.
-  . SignOut.
+## BDD
+  - Display comics.
+  - display comics recommedations.
 
 
-#Setup Requirements
+## Input
+  - Enter your email address, username and passsword
+  - Submit the form.
+  - Write down recommedations.
 
-  Here's a brief intro about what a developer must do in order to start running the app locally:
+## Output
+  - Sign Up,Sign In
+  - View added pomos.
+  - Username.
+  - Delete a pomo.
+  - SignOut.
 
-  $ git clone https://github.com/DjCooGie/qamiKa.git
-  $ cd Pitch/
 
-  . create a virtual environment
-  . Activate the virtual environment
-  . create your own database
-  . change or add configurations in the config.py file
-  . $ pip install -r requerements.txt
-  . $ chmod a+x start.sh
-  . $ ./start.sh
-  . $ python3.6 manage.py test (To run tests)
+## Setup Requirements
+
+  - Here's a brief intro about what a developer must do in order to start running the app locally:
+
+   - $ git clone https://github.com/DjCooGie/qamiKa.git
+   -  $ cd Pitch/
+
+   - create a virtual environment
+   -  Activate the virtual environment
+   -  create your own database
+   - change or add configurations in the config.py file
+   -  $ pip install -r requerements.txt
+   - $ chmod a+x start.sh
+   - $ ./start.sh
+   - $ python3.6 manage.py test (To run tests)
 
 
 #Bug and Solution.
