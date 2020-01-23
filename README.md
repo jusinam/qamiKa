@@ -34,11 +34,12 @@ Authors
 
   $ git clone https://github.com/DjCooGie/qamiKa.git
   $ cd Pitch/
-  create a virtual environment
-  Activate the virtual environment
-  create your own database
-  change or add configurations in the config.py file
-  $ pip install -r requerements.txt
-  $ chmod a+x start.sh
-  $ ./start.sh
-  $ python3.6 manage.py test (To run tests)
+
+  . create a virtual environment
+  . Activate the virtual environment
+  . create your own database
+  . change or add configurations in the config.py file
+  . $ pip install -r requerements.txt
+  . $ chmod a+x start.sh
+  . $ ./start.sh
+  . $ python3.6 manage.py test (To run tests)
