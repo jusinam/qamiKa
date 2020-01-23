@@ -21,12 +21,12 @@ class UpdateProfile(FlaskForm):
                 raise ValidationError("Invalid Username")
 
 class CreateBlog(FlaskForm):
-    title = StringField('Blog Title',validators=[Required()])
-    content = TextAreaField('Blog Content',validators=[Required()])
+    title = StringField('Comic Title',validators=[Required()])
+    content = TextAreaField('Comic Description',validators=[Required()])
     submit = SubmitField('Post')
     
-class Recommendation(FlaskForm):
+# class Recommendation(FlaskForm):
 
-    heading= StringField('title',validators=[Required()])
-    content = TextAreaField('content body', validators=[Required()])
-    submit = SubmitField('Submit')
+#     heading= StringField('title',validators=[Required()])
+#     content = TextAreaField('content body', validators=[Required()])
+#     submit = SubmitField('Submit')

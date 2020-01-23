@@ -1,31 +1,92 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container">
+<div class="container"  >
 
     <div class="row">
-        <div class="col-md-12 text-center text-white"> <h1>WELCOME TO QAMIKA</h1> </div>
+        <div class="col-md-12 text-center text-white">
+            <h1>WELCOME TO QAMIKA</h1>
+        </div>
     </div>
-  
+
     <div class="row">
-        <div class="col-md-4">
-    <div class="media-body">
-    							<div class="choice_text" style="background-color: rgba(72, 75, 78, 0.707);padding: 2%;border-radius: 0.2rem;" >
-    								<div class="date">
-                                        
-    									<p><a class="" href="#">Post author name</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    									<small class="text-right text-white"><i class="fa fa-calendar fa-1x" aria-hidden="true"></i> January 22, 2020</small></p>
-    									<p><a href="#"><i class="fa fa-comments-o" aria-hidden="true"></i> Views post view and comments comments</a></p>
-    								</div>
-                                    <a href="/">
-                                        <div class="text-center" >
-    									<h1>Post Title</h1>
-    								</a>
-    								<p class="text-white" >Truncated post body (200 True)</p>
-    							</div></div>
-    						</div>
-    					</div></div></div>
-    					
-    		
+        <div class="row">
+            <!-- <div class="col-md-1">
+              
+            </div> -->
+            <div class="col-md-12">
+              <div class="container">
+                        
+                  <div class="container landing">
+        
+                    <div class="row">
+                      <div class="col-md-9 land">
+                        {% for blog in blogs.items %}
+                        <div class="container bg mb-2" style="color:white;">
+                          <hr>
+                          <div class="row " style="border: 1px solid rgba(32, 31, 31, 0.435);border-radius: 0.2rem;" >
+                    
+                            <div class="col-md-10 pr-4 d-justify userblog">
+        
+                              <h4><a href="/">{{blog.title | title }}</a></h4>
+                              <p>{{blog.content }}</p>
+                              <p> <a href="/" ><i class="fa fa-heart" id="upvote" style="color: rgb(86, 168, 240);"></i></a> 0 <a href="/" ><i class="fa fa-heartbeat" id="downvote" style="color: rgb(208, 121, 51);"></i></a href="/" > <a class="btn btn-dark btn-sm" disabled="disabled"
+                                  href="{{url_for('main.blog',id=blog.id)}}">COMMENTS &nbsp;&nbsp;{{blog.comment.count()}}</a>
+                                <span class="text-right" style="margin-left: 40%;" ><strong>By : </strong><small>
+                                    {{blog.user.username}}</small> &nbsp;<strong>On :</strong>
+                                  <small>{{blog.posted.strftime('%d.%m.%Y')}}</small></span</p> </div> </div> <hr>
+                            </div>
+                            {% endfor %}
+        
+        
+                          </div>
+                          <div class="col-md-3">
+                            <div class="container" style="margin-top: 4%;">
+                             
+                            <form class="form-inline ml-2" action="" method="POST">
+                                <h2 class="text-center" style="color: rgb(203, 197, 182);"><small>CHAT WITH US</small></h2>
+                                <div class="md-form form-group">
+                                  <label class="white-color" style="font-size: 30;padding: 5%;" >Your Email...</label>
+                                  <input  type="email" class="form-control " name="email" required>
+                                
+                                </div>
+                                <div class="md-form form-group">
+                                    <label class="white-color" style="font-size: 30;padding: 0.5%;">Your Message ...</label>
+                                    <input type="text" class="form-control " name="description" required>
+                                    
+                                  </div>
+                                <div class="md-form form-group">
+                                    <a href="/" class="btn btn-sm btn-outline-default" id="sms"  >SEND</a>
+                                </div>
+                              </form>
+
+                              <form class="form-inline ml-2" action="" method="POST" style="margin-top: 5%;" >
+                                <h6 class="text-center" style="color: rgb(211, 208, 200);" ><small> SUBSCRIBE TO RECEIVE NOTIFICATIONS ON RECENT COMIC POSTS</small></h6>
+                                <div class="md-form form-group">
+                                  <label class="white-color">Your email ...</label>
+                                  <input type="email" class="form-control " name="subscriber" required>
+                                </div>
+                                <div class="md-form form-group">
+                                  <a href="/" class="btn btn-sm btn-outline-default" id="subscr">Subscribe</a>
+                                </div>
+                              </form>
+        
+        
+        
+                            </div>
+        
+                          </div>
+                        </div>
+                      </div>
+        
+                      </div>
+        
+        
+                </div>
+    </div>
+</div></div>
+
+
+
 
 {% endblock  %}
