@@ -43,3 +43,9 @@ Authors
   . $ chmod a+x start.sh
   . $ ./start.sh
   . $ python3.6 manage.py test (To run tests)
+
+
+#Bug and Solution.
+   . No known bugs
+
+   
