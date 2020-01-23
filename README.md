@@ -13,3 +13,9 @@ Authors
 #BDD
   Display comics.
   display comics recommedations.
+
+
+#Input
+  Enter your email address, username and passsword
+  Submit the form.
+  Write down recommedations.
