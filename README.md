@@ -11,8 +11,8 @@ Authors
 
 
 #BDD
-  Display comics.
-  display comics recommedations.
+  . Display comics.
+  . display comics recommedations.
 
 
 #Input
