@@ -1,6 +1,6 @@
 ## PITCH
 
-- QamiKa is a flask application that allows users to view comics and also recommend various jokes.
+- QamiKa is a flask application that allows users to view comics/jokes,add jokes/comics and also recommend and comments on various jokes.
 
 
 ## Authors
