@@ -119,7 +119,7 @@ def updateblog(blog_id):
         blog.title = form.title.data
         blog.content = form.content.data
         db.session.commit()
-        flash('Comic Post Successfully Updated')
+        flash('Post Successfully Updated')
         return redirect(url_for('main.index',id=blog_id))
     if request.method == 'GET':
         form.title.data = blog.title
