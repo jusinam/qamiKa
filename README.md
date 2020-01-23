@@ -45,14 +45,14 @@
    - $ python3.6 manage.py test (To run tests)
 
 
-#Bug and Solution.
-   . No known bugs
+## Bug and Solution.
+   - No known bugs
 
-#Technologies Used
-  . Python version 3.8.0 .
-  . Flask (Flas modules).
-  . PSQL database.
-  . SQLAlembic.
+## Technologies Used
+  - Python version 3.8.0 .
+  - Flask (Flas modules).
+  - PSQL database.
+  - SQLAlembic.
 
 #Live Site link
   https://qamiKa.herokuapp.com/
