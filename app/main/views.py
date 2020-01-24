@@ -35,7 +35,7 @@ def blog(id):
     comments = Comment.query.filter_by(blog_id = id).all()
     blog = Blog.query.get_or_404(id)
     return render_template('coms.html',blog = blog ,comment= comments)
-    
+
 @main.route('/comment/<blog_id>',methods=['GET','POST'])
 def comment(blog_id):
     blog = Blog.query.get(blog_id)
@@ -69,13 +69,13 @@ def profile():
         db.session.commit()
         flash('Profile Updated Successfully')
         return redirect(url_for('main.profile'))
-    elif request.method =='GET':        
+    elif request.method =='GET':
         form.bio.data = current_user.bio
-    profile_pic_path = url_for('static',filename='photos' + current_user.profile_pic_path)    
+    profile_pic_path = url_for('static',filename='photos' + current_user.profile_pic_path)
     return render_template('profile/profile.html',form=form)
 
 
-    
+
 @main.route('/user/<string:username>')
 def user_post(username):
     user = User.query.filter_by(username=username).first()

@@ -7,7 +7,7 @@ from . import login_manager
 
 
 class User(db.Model,UserMixin):
-    
+
     __tablename__ = 'users'
 
     id =db.Column(db.Integer,primary_key =True)
@@ -59,7 +59,7 @@ class Blog(db.Model):
         db.session.add(self)
         db.session.commit()
 
-    
+
     def get_blog(self,id):
         blog = Blog.query.filter_by(id=id).first()
         return blog
@@ -104,7 +104,7 @@ class Subscriber(db.Model):
 
     def __repr__(self):
         return f'Subscriber {self.email}'
-      
+
 
 # class Commic(db.Model):
 #     __tablename__='comic'
