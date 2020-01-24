@@ -1,30 +1,33 @@
-## PITCH
+## QAMIKA
 
-- QamiKa is a flask application that allows users to view comics/jokes,add jokes/comics and also recommend and comments on various jokes.
+This is a flask application that allows users(stand up and current comedians) to crack jokes and post them. It also is a platform that supports comedians by allowing them to post a short video showcasing their talent in comedy.
 
 
 ## Authors
-  -  Evans Nyambane
-  -   Peter Mbai
-  -   John Opana
-  -   Jepheth mwania
+  - Evans Nyambane
+  - John Opana
+  - Peter Mbai
+  - Jepheth mwania
 
 
 ## BDD
-  - Display comics.
-  - display comics recommedations.
+  - Accommodate and view uploaded audition videos
+  - Display feeds
+  - Display top jokes 
 
 
 ## Input
-  - Enter your email address, username and passsword
-  - Submit the form.
-  - Write down recommedations.
+  - Enter your email address, username and passsword tthen submit the form
+  - Crack a joke
+  - Comment on a cracked joke
+  - Update profile
 
 ## Output
   - Sign Up,Sign In
-  - View added pomos.
+  - View cracked and posted jokes, and top rated feeds
   - Username.
-  - Delete a pomo.
+  - Delete jokes/videos
+  - Update profile
   - SignOut.
 
 
@@ -33,7 +36,7 @@
   - Here's a brief intro about what a developer must do in order to start running the app locally:
 
    - $ git clone https://github.com/DjCooGie/qamiKa.git
-   -  $ cd Pitch/
+   -  $ cd qamiKa/
 
    - create a virtual environment
    -  Activate the virtual environment
@@ -53,26 +56,49 @@
   - Flask (Flas modules).
   - PSQL database.
   - SQLAlembic.
+  - YouTube
 
 ## Live Site link
-  - https://qamiKa.herokuapp.com/
+[https://pomo-ups.herokuapp.com/](https://pomo-ups.herokuapp.com/)
 
-## Collaborate
-  - Incase of any questions, problems ideas concerning the app, feel free to reach out to us:
+#### Collaborate
+>Incase of any questions, problems ideas concerning the app, feel free to reach out to us:
 
-  - Github: Evans Nyambane Email: evansonchagwa01@gmail.com
+>>Github: [Evans Nyambane](https://github.com/DjCooGie)
+>>Email: evansonchagwa01@gmail.com
 
-  - Github: Peter Mbai Email: petermbaik@gmail.com
+>>Github: [John Opana](https://github.com/johnopana)
+>>Email: johnopana@gmail.com
 
-  - Github: John Opana Email: johnopana@gmail.com
+>>Github: [Peter Mbai](https://github.com/Peter302)
+>>Email: petermbaik@gmail.com
+
+>>Github: [Japhet Mwania](https://github.com/Jeffacy99)
+>>Email: jeffmusa05@gmail.com
 
 
-
-## License
-  -  MIT ©2020
+#### License
+MIT
+&copy;2020 
 
          - Evans Nyambane
+         - John Opana 
          - Peter Mbai
-         - John Opana
-         - Japheth Mwania
-  - Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE      
+         - Japhet Mwania
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
