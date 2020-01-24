@@ -21,11 +21,10 @@
             border: none;
             border-bottom: 2px solid #fff;
         }
-
     </style>
     {% endblock %}
 </head>
-<body style="background-image: url(http://getwallpapers.com/wallpaper/full/f/9/6/504830.jpg);background-size: cover;background-repeat: no-repeat;">
+<body style="background-image: url(http://getwallpapers.com/wallpaper/small-retina/e/1/1/478568.jpg);background-size: cover;background-repeat: no-repeat;">
     {% block navbar %}
     {% include "navbar.html" %}
     {% endblock %}
@@ -44,12 +43,22 @@
 
     <script>
         $(document).ready(function(){
+          
             $("#showform").click(function(){
                 $("#profileupdate").slideDown('2500');
+              
+            $(".card-body #showform").click(function(){
+                $("#profileupdate").slideDown('2500');  
+  
             });
             $("#submit").click(function(){
                 $("#profileupdate").slideUp('1500');
             });
+
+            // $(".userblog #comm").click(function(){
+            //     // $("#hom").fadeOut('2500'); 
+            //     $("comi").slideDown('2500');
+            // });
 
         });
 

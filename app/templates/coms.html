@@ -2,39 +2,36 @@
 {% block content %}
 <div class="container">
 <br><br>
-    <div class="row text-white">
+    <div class="row text-white" id="comi">
 
         <div class="col-md-12">
             <div class="row">
                 <div class="col md-1">
                     </div>
-                <div class="col-md-6">
-                    {% for message in get_flashed_messages() %}
-                    <div class="alert alert-success">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                        {{ message }}
-                    </div>
-                    {% endfor %}
+                <div class="col-md-6" >
+                    
                     
                     <h3>Title : {{blog.title}} </h3>
                     <p>{{blog.content}}</p>
-                    <div>
+                    
+                    <div>{% if blog.user == current_user %}
                         <a class="btn btn-dark btn-sm m-1" href="{{url_for('main.updateblog',blog_id=blog.id)}}">Update Blog</a>
                         <a class="btn btn-dark btn-sm m-1"  data-toggle="modal" data-target="#modalComment"><i class="fas fa-comment-medical fa-2x"></i></a>
-                        {% if blog.user == current_user %}
+                        
                         <button type="submit" class="btn btn-sm btn-danger m-1" data-toggle="modal" data-target="#modalConfirmDelete">Delete</button>
                         {% endif %}
                         
                     </div> <p> <small style="color: rgb(167, 164, 158);" >{{blog.comment.count()}} comments</small></p>
                 </div>
                 
-                <div class="col-md-5">
-                    <h4><span style="font-style:italic;text-decoration:underline;">Comments</span></h4>
-                    
+                <div class="col-md-5 " style="border: 1px solid rgba(105, 97, 97, 0.755);border-radius: 0.2rem;padding: 1px;" >
+                    <h4 class="text-center" ><span style="font-style:italic;">Comments</span></h4>
+                    {% if blog.user == current_user %}
                     {% for comment in comments %}
-                    <p class="mt-10 text-white">{{comment.comment}}</p>
-                    <small>By: {{comment.blog.user.username}}</small><
+                    <p class="mt-10 text-white">{{comments.comment}}
+                    <small class="text-right" >By: {{comment.blog.user.username}}</small></p>
                     {% endfor %}
+                    {% endif %}
             
                     
                 </div>

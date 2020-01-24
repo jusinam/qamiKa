@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<div class="container"  >
+<div class="container" id="ho" >
 
     <div class="row">
         <div class="col-md-12 text-center text-white">
@@ -11,10 +11,17 @@
 
     <div class="row">
         <div class="row">
-            <!-- <div class="col-md-1">
-              
-            </div> -->
-            <div class="col-md-12">
+            <div class="col-md-3">
+              <div class="thumbnail">
+              <img class="img-thumbnail" src="https://netstorage-tuko.akamaized.net/images/65701c950b55da80.jpg?impolicy=cropped-image&imwidth=300" style="height: 30%;width: 100%;">
+              <p><strong class="text-white">Jalang’o comes to the rescue of student who reported to school with an empty metal Box....&nbsp; <a href="https://www.pulselive.co.ke/entertainment/jalango-and-well-wishers-join-forces-to-pay-school-fees-for-levis-otieno-rabah-who/yhgs347" target="blank">READ MORE</a></strong></p>
+            </div><div class="thumbnail">
+              <img class="img-thumbnail" src="https://img.youtube.com/vi/ZzcYbfM4GNU/hqdefault.jpg" style="height: 30%;width: 100%;">
+              <p><strong class="text-white" >Have you had a good laugh this year? Let’s laugh away the hardships of Njaanuary....&nbsp; <a href="https://www.google.com/search?sxsrf=ACYBGNSSUDFD1fmSD6OpOsXXTiLv6MS0FQ:1579784276315&ei=VJgpXrO0DLSJjLsPjNKR8A8&q=churchill+show+upcoming+events&oq=churchill+show+upco&gs_l=psy-ab.3.0.0j0i22i30.3323.5922..8978...0.2..0.332.2571.0j3j6j2......0....1..gws-wiz.......0i71j35i39j0i8i67j0i67j0i22i10i30.M8mMk5vZwxk&ibp=htl;events&rciv=evn&sa=X&ved=2ahUKEwit05e_5JnnAhWOmBQKHRyICpgQ5rwDKAF6BAgHEAw#htivrt=events&htidocid=YSwib6yhN0SBhOWDJpA8-A%3D%3D&fpstate=tldetail" target="blank">READ MORE</a></strong></p>
+            </div>
+          </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-8">
               <div class="container">
                         
                   <div class="container landing">
@@ -27,16 +34,16 @@
                           <div class="row " style="border: 1px solid rgba(32, 31, 31, 0.435);border-radius: 0.2rem;" >
                     
                             <div class="col-md-10 pr-4 d-justify userblog">
-        
+                              <span class="text-right" style="color: rgb(142, 138, 128);" ><strong>By : </strong><small>
+                                {{blog.user.username}}</small> </span>
                               <h4><a href="/">{{blog.title | title }}</a></h4>
                               <p>{{blog.content }}</p>
-                              <p> <a href="/" ><i class="fa fa-heart" id="upvote" style="color: rgb(86, 168, 240);"></i></a> 0 <a href="/" ><i class="fa fa-heartbeat" id="downvote" style="color: rgb(208, 121, 51);"></i></a href="/" > <a class="btn btn-dark btn-sm" disabled="disabled"
-                                  href="{{url_for('main.blog',id=blog.id)}}">COMMENTS &nbsp;&nbsp;{{blog.comment.count()}}</a>
-                                <span class="text-right" style="margin-left: 40%;" ><strong>By : </strong><small>
-                                    {{blog.user.username}}</small> &nbsp;<strong>On :</strong>
-                                  <small>{{blog.posted.strftime('%d.%m.%Y')}}</small></span</p> </div> </div> <hr>
+                              <p> <a href="/" ><i class="far fa-grin-squint-tears" id="upvote" style="color: rgb(86, 168, 240);"></i></a>&nbsp; 0 &nbsp;<a href="/" ><i class="far fa-meh-rolling-eyes" id="downvote" style="color: rgb(208, 121, 51);"></i></a href="/" >&nbsp;<a class="btn btn-dark btn-sm" id="comm" disabled="disabled"
+                                  href="{{url_for('main.blog',id=blog.id)}}"><i class="far fa-comments"></i>&nbsp;&nbsp;<small>{{blog.comment.count()}}</small>&nbsp;&nbsp;Leave a Comment </a>
+                                &nbsp;<small style="font-size: 10px;"><strong>Posted On :</strong>
+                                  {{blog.posted.strftime('%d.%m.%Y')}}</small></p> </div> </div>
                             </div>
-                            {% endfor %}
+                           {% endfor %}
         
         
                           </div>
@@ -44,7 +51,7 @@
                             <div class="container" style="margin-top: 4%;">
                              
                             <form class="form-inline ml-2" action="" method="POST">
-                                <h2 class="text-center" style="color: rgb(203, 197, 182);"><small>CHAT WITH US</small></h2>
+                                <h5 class="text-center" style="color: rgb(203, 197, 182);"><small>TALK TO US</small></h5>
                                 <div class="md-form form-group">
                                   <label class="white-color" style="font-size: 30;padding: 5%;" >Your Email...</label>
                                   <input  type="email" class="form-control " name="email" required>
@@ -54,26 +61,12 @@
                                     <label class="white-color" style="font-size: 30;padding: 0.5%;">Your Message ...</label>
                                     <input type="text" class="form-control " name="description" required>
                                     
-                                  </div>
-                                <div class="md-form form-group">
-                                    <a href="/" class="btn btn-sm btn-outline-default" id="sms"  >SEND</a>
-                                </div>
-                              </form>
-
-                              <form class="form-inline ml-2" action="" method="POST" style="margin-top: 5%;" >
-                                <h6 class="text-center" style="color: rgb(211, 208, 200);" ><small> SUBSCRIBE TO RECEIVE NOTIFICATIONS ON RECENT COMIC POSTS</small></h6>
-                                <div class="md-form form-group">
-                                  <label class="white-color">Your email ...</label>
-                                  <input type="email" class="form-control " name="subscriber" required>
-                                </div>
-                                <div class="md-form form-group">
-                                  <a href="/" class="btn btn-sm btn-outline-default" id="subscr">Subscribe</a>
-                                </div>
+                                  </div>                               
+                                    <a href="/" class="btn btn-sm btn-outline-default" id="sms">SEND</a>
+                                
                               </form>
         
-        
-        
-                            </div>
+                              <iframe width="320" height="240" src="https://www.youtube.com/embed/Y6m7bUyNUag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                            </div>
         
                           </div>
                         </div>
