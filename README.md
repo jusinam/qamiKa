@@ -4,7 +4,7 @@ This is a flask application that allows users(stand up and current comedians) to
 
 
 ## Authors
-  - Evans Nyambane
+  - Evans Onchagwa
   - John Opana
   - Peter Mbai
   - Jepheth mwania
@@ -35,7 +35,7 @@ This is a flask application that allows users(stand up and current comedians) to
 
   - Here's a brief intro about what a developer must do in order to start running the app locally:
 
-   - $ git clone https://github.com/DjCooGie/qamiKa.git
+   - $ git clone https://github.com/jusinam/qamiKa.git
    -  $ cd qamiKa/
 
    - create a virtual environment
@@ -64,7 +64,7 @@ This is a flask application that allows users(stand up and current comedians) to
 #### Collaborate
 >Incase of any questions, problems ideas concerning the app, feel free to reach out to us:
 
->>Github: [Evans Nyambane](https://github.com/DjCooGie)
+>>Github: [Evans Onchagwa](https://github.com/DjCooGie)
 >>Email: evansonchagwa01@gmail.com
 
 >>Github: [John Opana](https://github.com/johnopana)
@@ -81,7 +81,7 @@ This is a flask application that allows users(stand up and current comedians) to
 MIT
 &copy;2020 
 
-         - Evans Nyambane
+         - Evans Onchagwa
          - John Opana 
          - Peter Mbai
          - Japhet Mwania
