@@ -4,7 +4,7 @@ This is a flask application that allows users(stand up and current comedians) to
 
 
 ## Authors
-  - Evans Onchagwa
+  - Evans ON
   - John Opana
   - Peter Mbai
   - Jepheth mwania
@@ -59,29 +59,28 @@ This is a flask application that allows users(stand up and current comedians) to
   - YouTube
 
 ## Live Site link
-[https://pomo-ups.herokuapp.com/](https://pomo-ups.herokuapp.com/)
+[Click here](https://pomo-ups.herokuapp.com/)
 
 #### Collaborate
 >Incase of any questions, problems ideas concerning the app, feel free to reach out to us:
 
->>Github: [Evans Onchagwa](https://github.com/DjCooGie)
->>Email: evansonchagwa01@gmail.com
+>>Email: [Send mail](mailto:evansonchagwa01@gmail.com)
 
 >>Github: [John Opana](https://github.com/johnopana)
->>Email: johnopana@gmail.com
+>>Email: [Send mail](mailto:johnopana@gmail.com)
 
 >>Github: [Peter Mbai](https://github.com/Peter302)
->>Email: petermbaik@gmail.com
+>>Email: [Send mail](mailto:petermbaik@gmail.com)
 
 >>Github: [Japhet Mwania](https://github.com/Jeffacy99)
->>Email: jeffmusa05@gmail.com
+>>Email: [Send mail](mailto:jeffmusa05@gmail.com)
 
 
 #### License
 MIT
 &copy;2020 
 
-         - Evans Onchagwa
+         - Evans ON
          - John Opana 
          - Peter Mbai
          - Japhet Mwania
